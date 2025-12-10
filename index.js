@@ -337,6 +337,103 @@ app.delete("/tests/:id", (req, res) => {
   res.json(deleted);
 });
 
+//Tests for a student
+app.get("/students/:id/tests", (req, res) => {
+  const id = parseInt(req.params.id);
+
+  const student = students.find((s) => s.id === id);
+  if (!student) {
+    return res.status(404).json({ error: "Student not found" });
+  }
+
+  const studentTests = tests.filter((t) => t.studentId === id);
+  res.json(studentTests);
+});
+
+//all tests for a course
+app.get("/courses/:id/tests", (req, res) => {
+  const id = parseInt(req.params.id);
+
+  const course = courses.find((c) => c.id === id);
+  if (!course) {
+    return res.status(404).json({ error: "Course not found" });
+  }
+
+  const courseTests = tests.filter((t) => t.courseId === id);
+  res.json(courseTests);
+});
+
+//student average
+// Get a student's average across all their tests
+app.get("/students/:id/average", (req, res) => {
+  const id = parseInt(req.params.id);
+
+  const student = students.find((s) => s.id === id);
+  if (!student) {
+    return res.status(404).json({ error: "Student not found" });
+  }
+
+  const studentTests = tests.filter((t) => t.studentId === id);
+
+  if (studentTests.length === 0) {
+    return res.json({
+      studentId: id,
+      average: null,
+      testCount: 0,
+      message: "This student has no tests yet.",
+    });
+  }
+
+  const totalPercent = studentTests.reduce((sum, test) => {
+    const percent = (test.mark / test.outOf) * 100;
+    return sum + percent;
+  }, 0);
+
+  const average = totalPercent / studentTests.length;
+
+  res.json({
+    studentId: id,
+    average: Number(average.toFixed(2)),
+    testCount: studentTests.length,
+  });
+});
+
+//class average for a course
+// Get class average for a specific course
+app.get("/courses/:id/average", (req, res) => {
+  const id = parseInt(req.params.id);
+
+  const course = courses.find((c) => c.id === id);
+  if (!course) {
+    return res.status(404).json({ error: "Course not found" });
+  }
+
+  const courseTests = tests.filter((t) => t.courseId === id);
+
+  if (courseTests.length === 0) {
+    return res.json({
+      courseId: id,
+      average: null,
+      testCount: 0,
+      message: "This course has no tests yet.",
+    });
+  }
+
+  const totalPercent = courseTests.reduce((sum, test) => {
+    const percent = (test.mark / test.outOf) * 100;
+    return sum + percent;
+  }, 0);
+
+  const average = totalPercent / courseTests.length;
+
+  res.json({
+    courseId: id,
+    average: Number(average.toFixed(2)),
+    testCount: courseTests.length,
+  });
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server is listening on http://localhost:${PORT}`);
 });
