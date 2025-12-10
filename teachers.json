@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "firstName": "Jason",
+    "lastName": "Chen",
+    "email": "jchen@bvg.ca",
+    "department": "Computer Science",
+    "room": "305"
+  },
+  {
+    "id": 2,
+    "firstName": "Amrita",
+    "lastName": "Singh",
+    "email": "asingh@bvg.ca",
+    "department": "Mathematics",
+    "room": "304"
+  },
+  {
+    "id": 3,
+    "firstName": "Michael",
+    "lastName": "O'Neill",
+    "email": "moneill@bvg.ca",
+    "department": "Science",
+    "room": "Physics Lab"
+  },
+  {
+    "id": 4,
+    "firstName": "Sofia",
+    "lastName": "Rodriguez",
+    "email": "srodriguez@bvg.ca",
+    "department": "Science",
+    "room": "Chemistry Lab"
+  },
+  {
+    "id": 5,
+    "firstName": "Lauren",
+    "lastName": "Park",
+    "email": "lpark@bvg.ca",
+    "department": "English",
+    "room": "210"
+  },
+  {
+    "id": 6,
+    "firstName": "David",
+    "lastName": "Nguyen",
+    "email": "dnguyen@bvg.ca",
+    "department": "Science",
+    "room": "Biology Lab"
+  },
+  {
+    "id": 7,
+    "firstName": "Test",
+    "lastName": "Teacher",
+    "email": "test.teacher@bvg.ca",
+    "department": "Math",
+    "room": "201"
+  }
+]

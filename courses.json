@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "code": "ICS4U",
+    "name": "Grade 12 Computer Science",
+    "teacherId": 1,
+    "semester": "1",
+    "room": "Lab 1",
+    "schedule": "Day 1 AM"
+  },
+  {
+    "id": 2,
+    "code": "MHF4U",
+    "name": "Advanced Functions",
+    "teacherId": 2,
+    "semester": "1",
+    "room": "304",
+    "schedule": "Day 1 PM"
+  },
+  {
+    "id": 3,
+    "code": "SPH4U",
+    "name": "Grade 12 Physics",
+    "teacherId": 3,
+    "semester": "2",
+    "room": "Physics Lab",
+    "schedule": "Day 2 AM"
+  },
+  {
+    "id": 4,
+    "code": "SCH4U",
+    "name": "Grade 12 Chemistry",
+    "teacherId": 4,
+    "semester": "2",
+    "room": "Chemistry Lab",
+    "schedule": "Day 2 PM"
+  },
+  {
+    "id": 5,
+    "code": "ENG4U",
+    "name": "Grade 12 English",
+    "teacherId": 5,
+    "semester": "Full Year",
+    "room": "210",
+    "schedule": "Day 1 First Period"
+  },
+  {
+    "id": 6,
+    "code": "SBI4U",
+    "name": "Grade 12 Biology",
+    "teacherId": 6,
+    "semester": "2",
+    "room": "Biology Lab",
+    "schedule": "Day 3 AM"
+  }
+]

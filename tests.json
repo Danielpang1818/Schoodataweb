@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "studentId": 1,
+    "courseId": 1,
+    "testName": "ICS4U Unit 1 Test",
+    "date": "2025-02-10",
+    "mark": 50,
+    "outOf": 50,
+    "weight": 10
+  },
+  {
+    "id": 2,
+    "studentId": 2,
+    "courseId": 1,
+    "testName": "ICS4U Unit 1 Test",
+    "date": "2025-02-10",
+    "mark": 39,
+    "outOf": 50,
+    "weight": 10
+  },
+  {
+    "id": 3,
+    "studentId": 3,
+    "courseId": 1,
+    "testName": "ICS4U Unit 2 Test",
+    "date": "2025-03-05",
+    "mark": 42,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 4,
+    "studentId": 4,
+    "courseId": 1,
+    "testName": "ICS4U Midterm",
+    "date": "2025-03-25",
+    "mark": 83,
+    "outOf": 100,
+    "weight": 20
+  },
+  {
+    "id": 5,
+    "studentId": 5,
+    "courseId": 1,
+    "testName": "ICS4U Final Project Demo",
+    "date": "2025-05-15",
+    "mark": 92,
+    "outOf": 100,
+    "weight": 25
+  },
+  {
+    "id": 6,
+    "studentId": 3,
+    "courseId": 2,
+    "testName": "MHF4U Functions Test",
+    "date": "2025-02-14",
+    "mark": 36,
+    "outOf": 40,
+    "weight": 10
+  },
+  {
+    "id": 7,
+    "studentId": 4,
+    "courseId": 2,
+    "testName": "MHF4U Trig Test",
+    "date": "2025-03-03",
+    "mark": 41,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 8,
+    "studentId": 6,
+    "courseId": 2,
+    "testName": "MHF4U Logarithms Test",
+    "date": "2025-03-20",
+    "mark": 45,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 9,
+    "studentId": 7,
+    "courseId": 2,
+    "testName": "MHF4U Midterm",
+    "date": "2025-04-02",
+    "mark": 78,
+    "outOf": 100,
+    "weight": 20
+  },
+  {
+    "id": 10,
+    "studentId": 8,
+    "courseId": 3,
+    "testName": "SPH4U Kinematics Test",
+    "date": "2025-02-18",
+    "mark": 46,
+    "outOf": 50,
+    "weight": 10
+  },
+  {
+    "id": 11,
+    "studentId": 9,
+    "courseId": 3,
+    "testName": "SPH4U Dynamics Test",
+    "date": "2025-03-06",
+    "mark": 38,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 12,
+    "studentId": 10,
+    "courseId": 3,
+    "testName": "SPH4U Energy Test",
+    "date": "2025-03-27",
+    "mark": 43,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 13,
+    "studentId": 11,
+    "courseId": 3,
+    "testName": "SPH4U Waves Test",
+    "date": "2025-04-15",
+    "mark": 80,
+    "outOf": 100,
+    "weight": 20
+  },
+  {
+    "id": 14,
+    "studentId": 12,
+    "courseId": 4,
+    "testName": "SCH4U Stoichiometry Test",
+    "date": "2025-02-21",
+    "mark": 37,
+    "outOf": 45,
+    "weight": 10
+  },
+  {
+    "id": 15,
+    "studentId": 13,
+    "courseId": 4,
+    "testName": "SCH4U Thermochemistry Test",
+    "date": "2025-03-10",
+    "mark": 42,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 16,
+    "studentId": 14,
+    "courseId": 4,
+    "testName": "SCH4U Equilibrium Test",
+    "date": "2025-03-31",
+    "mark": 39,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 17,
+    "studentId": 15,
+    "courseId": 4,
+    "testName": "SCH4U Organic Chemistry Test",
+    "date": "2025-04-20",
+    "mark": 77,
+    "outOf": 100,
+    "weight": 20
+  },
+  {
+    "id": 18,
+    "studentId": 1,
+    "courseId": 5,
+    "testName": "ENG4U Comparative Essay",
+    "date": "2025-02-07",
+    "mark": 43,
+    "outOf": 50,
+    "weight": 10
+  },
+  {
+    "id": 19,
+    "studentId": 5,
+    "courseId": 5,
+    "testName": "ENG4U Shakespeare Test",
+    "date": "2025-03-12",
+    "mark": 88,
+    "outOf": 100,
+    "weight": 20
+  },
+  {
+    "id": 20,
+    "studentId": 9,
+    "courseId": 5,
+    "testName": "ENG4U Literary Analysis Test",
+    "date": "2025-04-05",
+    "mark": 40,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 21,
+    "studentId": 2,
+    "courseId": 6,
+    "testName": "SBI4U Cell Biology Test",
+    "date": "2025-02-24",
+    "mark": 35,
+    "outOf": 40,
+    "weight": 10
+  },
+  {
+    "id": 22,
+    "studentId": 6,
+    "courseId": 6,
+    "testName": "SBI4U Genetics Test",
+    "date": "2025-03-14",
+    "mark": 43,
+    "outOf": 50,
+    "weight": 15
+  },
+  {
+    "id": 23,
+    "studentId": 10,
+    "courseId": 6,
+    "testName": "SBI4U Evolution Test",
+    "date": "2025-04-01",
+    "mark": 81,
+    "outOf": 100,
+    "weight": 20
+  },
+  {
+    "id": 24,
+    "studentId": 11,
+    "courseId": 1,
+    "testName": "ICS4U Recursion Quiz",
+    "date": "2025-04-18",
+    "mark": 18,
+    "outOf": 20,
+    "weight": 5
+  },
+  {
+    "id": 25,
+    "studentId": 8,
+    "courseId": 2,
+    "testName": "MHF4U Final Exam",
+    "date": "2025-06-10",
+    "mark": 86,
+    "outOf": 100,
+    "weight": 30
+  },
+  {
+    "id": 26,
+    "studentId": 1,
+    "courseId": 1,
+    "testName": "Unit Test Example",
+    "date": "2025-05-01",
+    "mark": 20,
+    "outOf": 25,
+    "weight": 10
+  }
+]
