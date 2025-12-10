@@ -364,7 +364,6 @@ app.get("/courses/:id/tests", (req, res) => {
 });
 
 //student average
-// Get a student's average across all their tests
 app.get("/students/:id/average", (req, res) => {
   const id = parseInt(req.params.id);
 
