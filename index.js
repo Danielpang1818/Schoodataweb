@@ -363,40 +363,6 @@ app.get("/courses/:id/tests", (req, res) => {
   res.json(courseTests);
 });
 
-//student average
-app.get("/students/:id/average", (req, res) => {
-  const id = parseInt(req.params.id);
-
-  const student = students.find((s) => s.id === id);
-  if (!student) {
-    return res.status(404).json({ error: "Student not found" });
-  }
-
-  const studentTests = tests.filter((t) => t.studentId === id);
-
-  if (studentTests.length === 0) {
-    return res.json({
-      studentId: id,
-      average: null,
-      testCount: 0,
-      message: "This student has no tests yet.",
-    });
-  }
-
-  const totalPercent = studentTests.reduce((sum, test) => {
-    const percent = (test.mark / test.outOf) * 100;
-    return sum + percent;
-  }, 0);
-
-  const average = totalPercent / studentTests.length;
-
-  res.json({
-    studentId: id,
-    average: Number(average.toFixed(2)),
-    testCount: studentTests.length,
-  });
-});
-
 //class average for a course
 app.get("/courses/:id/average", (req, res) => {
   const id = parseInt(req.params.id);
@@ -431,6 +397,30 @@ app.get("/courses/:id/average", (req, res) => {
   });
 });
 
+//student average
+app.get("/students/:id/average", (req,res) => {
+  const id = parseInt(req.params.id);
+
+  const student = students.find((s) => s.id === id);
+  if (!student) {
+    return res.status(404).json({error: "Student not found"});
+  }
+
+  const studentTests = tests.filter((t) => t.studentId === id);
+
+  const totalPercent = studentTests.reduce((sum, test) => {
+    const percent = (test.mark / test.outOf) *100;
+      return sum + percent;
+    }, 0);
+
+    const average = totalPercent / studentTests.length;
+
+    res.json ({
+      studentId: id,
+      testCount: studentTests.length,
+      averagePercent: Number(average.toFixed(2)),
+    });
+});
 
 app.listen(PORT, () => {
   console.log(`Server is listening on http://localhost:${PORT}`);
