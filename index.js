@@ -2,27 +2,17 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
+import connectDB from './db.js';
 
 // 1. Setup Configuration
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+connectDB(); 
+
 app.use(express.json());
 app.use(cors());
-
-// 2. Connect to MongoDB Atlas
-if (!process.env.MONGO_URI) {
-  console.error("❌ Error: MONGO_URI is missing from your .env file!");
-  process.exit(1);
-}
-
-mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ Connected to MongoDB Atlas"))
-  .catch(err => console.error("❌ Connection error:", err));
-
-// 3. Define Data Models (Schemas)
-// Note: I removed the manual "id" field. MongoDB creates a unique "_id" automatically.
 
 const teacherSchema = new mongoose.Schema({
   firstName: String,
